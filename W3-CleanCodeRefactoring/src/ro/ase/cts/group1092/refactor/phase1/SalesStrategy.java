@@ -1,6 +1,9 @@
 package ro.ase.cts.group1092.refactor.phase1;
 
 public class SalesStrategy {
+	public static final int FIDELITY_YEARS_THRESHOLD=10;
+	public static final float FIDELITY_DISCOUNT=0.15f;
+	
 	public float ComputeFinalPrice(int productType, float initialPrice, int yearsSinceRegistration)
 	  {
 	    float finalResult = 0;
