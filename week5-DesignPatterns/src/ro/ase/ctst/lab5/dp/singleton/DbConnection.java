@@ -47,5 +47,20 @@ public class DbConnection {
 		return DbConnection.dbConnection;
 	}
 	
+	public static DbConnection getDbConnection(
+		String socket,String schema) {
+		if(DbConnection.dbConnection==null) {
+			dbConnection= new DbConnection(socket,schema);
+		}
+		//optional - throw an error if they try to open a connection to a database
+		if(!socket.equals(dbConnection.socket)||
+				!schema.equals(dbConnection.schema))
+			throw new UnsupportedOperationException("You already have an opened connection to a different DB");
+		
+		
+		
+		return DbConnection.dbConnection;
+	}
+	
 
 }
