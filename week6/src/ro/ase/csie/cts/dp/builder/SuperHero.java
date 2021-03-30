@@ -40,7 +40,7 @@ public class SuperHero {
         this.isWounded=true;
     }
 
-    public static class SuperHeroBuilder{
+    public static class SuperHeroBuilder extends SuperHero {
         private SuperHero superHero=null;
         public SuperHeroBuilder(String name, int lifePoints){
             superHero=new SuperHero();
@@ -48,8 +48,9 @@ public class SuperHero {
             superHero.lifePoints=lifePoints;
         }
 
-        public void isVillain(){
+        public SuperHeroBuilder isVillain(){
             superHero.isVillain=true;
+            return this;
         }
 
         public SuperHeroBuilder isWounded(){
