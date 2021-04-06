@@ -1,0 +1,11 @@
+1. Create different weapon types in the game
+- currently there are 3 types of weapons PISTOL, MACHINE_GUN and ROCKET
+- there is a risk that in the future new types will appear or the existing ones will change
+
+Creating objects - focus on creational patterns
+
+"different weapon types" - framework of different classes
+"3 types of weapons" - 3 diff classes and have something in common like abstract classes
+"in the future.. " - new classes
+
+how do we write this solution
