@@ -1,0 +1,80 @@
+1. Combination of camelCase and snakeCase
+=> In java is preferred camelCase where as snakeCase is in Python, It wouldn't be clean to combine them in the same code.
+
+2. Multiple variables were declared on the same line and it should be more cleaner to declare each variable on a single line.
+
+3. Various methods are not straightforward and haven't been quite good chosen
+=> They must be named after their purpose in code e.g "calculate" -> "calculateTotalFee".
+
+4. Poorly spacing is observed, some have not spacing at all
+=> I suggest it would be benefit and more readable to have an uniform spacing and to respect the coding in Java Conventions.
+
+5. The Variables: STANDARD, BUDGET, PREMIUM would be more practice to store them in an Enum file called "AccountTypes".
+
+6. There are unnecessary getter functions because the attributes of the class are public, because it doesn't respect the Encapsulation Principle
+=> In order them to have a purpose in this code.. i made the attributes private.
+
+7. There are few accessor methods are implemented
+=> Because the attributes of the class were made private, best practice would be to implement all accessor methods.
+
+8. The 'loan' and 'getRate' return the data and prints to the console a string which is not required.
+=> It should only return the data.. in order to have a string printed to the console we have the ToString method.
+
+9. There are useless comments that doesn't help us in the code 'The lead has requested it..'
+=>The purpose of the comments in the code would be to offer you a pre Hint on what is about.
+
+10. It is seen to have an Exception in 'setValue' and constructor that doesn't offer to much info regarding the problem in
+=> That's why i've created a custom Exception to offer the user a hint.
+
+11. It can be observed in the 'to_string' method that it must be camelCase 'toString' and also to be overridden(having the annotation '@override')
+
+12. The use of 'this' keyword is not quite ok, is not consistent
+=> it is recommended to use 'this' keyword only when we refer to the class attributes.
+
+13. The constructor is situated at the end of the Class
+=> The constructor should be placed  at the beginning of the class right after the class attributes.
+
+14. The 'daysActive' attribute is not initialized and the 'malculate' method will return 0.
+=>It must be initialized through the constructor.
+
+****Calculate Method*****
+15. In the 'calculate' method the code isn't well organized
+=>the code must be written and organized in the same nature as the rest of the code respecting the Java conventions.
+16. The 'temp' is never used soo it makes it useless for the method.
+17. The 'i' must be spaced using tab.
+18. Removed redundant variable 'Account account', it uses memory for nothing
+=> used the element from the array for better clarity.
+19. Instead of long coding regarding the if validation
+=> Improved visibiliIty through implementing Two methods for comparing the 'AccountTypes'
+20. The '0.0125' value is hardcoded
+=>The best practice would be to organize it in a constant static variable to automatize the process.
+21. In the for Loop it can be seen that is not ok spaced.
+=> Putted some spaces :)
+****************************
+22. In the code can be seen that there are various print methods that do not offer useful information.
+=> That's why i managed to implement an toString to combine all the output.
+
+23.Not consistent use of the curly braces in the repetitive structures
+=> All code block  must be placed between curly braces.
+
+                       .-.
+                      |_:_|
+                     /(_Y_)\
+.                   ( \/M\/ )
+ '.               _.'-/'-'\-'._
+   ':           _/.--'[[[[]'--.\_
+     ':        /_'  : |::"| :  '.\
+       ':     //   ./ |oUU| \.'  :\
+         ':  _:'..' \_|___|_/ :   :|
+           ':.  .'  |_[___]_|  :.':\
+            [::\ |  :  | |  :   ; : \
+             '-'   \/'.| |.' \  .;.' |
+             |\_    \  '-'   :       |
+             |  \    \ .:    :   |   |
+             |   \    | '.   :    \  |
+             /       \   :. .;       |
+            /     |   |  :__/     :  \\
+           |  |   |    \:   | \   |   ||
+          /    \  : :  |:   /  |__|   /|
+         |     : : :_/_|  /'._\  '--|_\
+          /___.-/_|-'   \  \
